@@ -12,12 +12,13 @@ This is the front-end code of a simple, fluid and intuitive banking application 
 - User can generate a Bank Identity Statement in pdf format 
 - Secure authentication
 
+# Also used
 - Bootstrap and CSS for personalization
-- jsPdf and html2canvas to generate a user's Bank Identity Statement
+- jsPdf and html2canvas to generate the user's Bank Identity Statement
 - Chartjs for bank flow visualization charts
 
 # Proposed improvements
-- TODO: 
+- TODO
     - validate pending operations
     - manage bank transfers and associated beneficiaries
     - create related statitics and graphs
@@ -29,5 +30,6 @@ This is the front-end code of a simple, fluid and intuitive banking application 
     - Change the structure of the application to implement a parent-child component logic and thus separate route components from subcomponents
 
 # Back-end code
+The code for the back-end API: [Leika API](https://github.com/LSS-commits/leika_api)
 
 
