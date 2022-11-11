@@ -38,7 +38,7 @@ export class AuthGuardService {
         this.crudService.getTypeRequest('/auth/logout').subscribe({
           next: (res) => {
             // cookie is cleared
-            console.log(Object.values(res)[0]);
+            // console.log(Object.values(res)[0]);
 
             this.setLoggedInState(false);
             this.setLoggedOutState(true);

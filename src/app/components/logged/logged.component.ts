@@ -46,7 +46,7 @@ export class LoggedComponent implements OnInit {
     // clear authToken from cookie storage
     this.crudService.getTypeRequest('/auth/logout').subscribe({
       next: (res) => {
-        console.log(Object.values(res)[0]);
+        //console.log(Object.values(res)[0]);
 
         //TODO: change logged state instead of redirection
         this.loggedOutState = true;
