@@ -25,9 +25,9 @@ This is the front-end code of a simple, fluid and intuitive banking application 
     - enable the management of the profile and settings of the app
     
 - Code quality
-    - Tidy up files
-    - Set up routing to optimize loading (lazy loading)
-    - Change the structure of the application to implement a parent-child component logic and thus separate route components from subcomponents
+    - tidy up files
+    - set up routing to optimize loading (lazy loading)
+    - change the structure of the application to implement a parent-child component logic and thus separate route components from subcomponents
 
 # Back-end code
 The code for the back-end API: [Leika API](https://github.com/LSS-commits/leika_api)
