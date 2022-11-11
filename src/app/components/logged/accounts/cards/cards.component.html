@@ -1,0 +1,23 @@
+<div id="cardsScrollContainer">
+<h3 class="text-center">Your cards</h3>
+<div class="d-flex flex-column align-items-center">
+    <div class="m-2" *ngFor="let ac of accountCards">
+      <div class="card h-100">
+        <p class="card-text luluvampireblack rounded-top lulugreytxt ps-3">{{ac.cardHolder.username}}</p>
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <h5 class="card-title mb-0 me-2">{{'Card **** '+(ac.cardNumber | slice:-4)}}</h5>
+            <i class="fa-brands fa-cc-visa fs-1" *ngIf="ac.paymentNetwork == 'Visa'"></i>
+            <i class="fa-brands fa-cc-mastercard fs-1" *ngIf="ac.paymentNetwork == 'Mastercard'"></i>          
+            <i class="fa-brands fa-cc-amex fs-1" *ngIf="ac.paymentNetwork == 'American Express'"></i>  
+          </div>
+          <p class="card-text fst-italic mt-3">Expiration date: {{formatDate(ac.expirationDate)}}</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-end pe-3 luluvampireblack rounded-bottom lulugreytxt">
+          <span>Status:</span>
+          <p class="card-text ms-1" [ngClass]="(ac.cardStatus == 'Valid' ? 'lulugreentransaction' : 'text-danger')">{{ac.cardStatus}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

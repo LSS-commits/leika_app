@@ -1,0 +1,42 @@
+<div class="lulugradientgoldblack w-100 h-100 d-flex flex-column align-items-center justify-content-center" id="luluwrapper-wholelogin">
+
+
+  <img src="../../../assets/leika_transp.png" class="img-fluid rounded mb-5" alt="leika logo" width="180" height="auto">
+
+  <h1 class="mb-3 lulugreytxt">Log in</h1>
+
+  <!-- Error message -->
+  <div class="w-100 my-1 text-center text-danger fw-bold" *ngIf="errorState">
+    {{ errorMessage }}
+  </div>
+
+  <!-- TODO: get rid of blue outline -->
+  <!-- Inputs -->
+  <div class="p-4 d-flex flex-column align-items-center justify-content-center" id="lululogin-formwrapper">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" autocomplete="off">
+      <!-- Email -->
+      <div class="form-floating">
+        <input type="email" class="form-control" id="loginmail" placeholder="name@example.com" name="email"
+          formControlName="email" autofocus>
+        <label for="loginmail">Email address</label>
+      </div>
+
+      <!-- Password-->
+      <div class="input-group my-1">
+        <div class="form-floating lulubg lulupilltest">
+          <input type="password" class="form-control lulupilltest" id="loginpassword" aria-label="Text input with checkbox"
+            placeholder="Password lulupilltest" name="password" formControlName="password" #togglePassword>
+          <label for="loginpassword">Password</label>
+        </div>
+        <!-- TODO: put it inside-->
+        <div class="luluvampireblack lulugreytxt input-group-text border-0" (click)="togglePW()">
+          <i *ngIf="passwordShow" class="fa-solid fa-eye-slash"></i>
+          <i *ngIf="!passwordShow" class="fa-solid fa-eye"></i>
+        </div>
+      </div>
+
+      <button class="luluvampireblack w-100 mt-2 btn btn-lg text-white" type="submit">Sign in</button>
+      <p class="lulusignaturetxt mt-5 mb-3 text-center text-white">&copy; 2022, Leika Corp</p>
+    </form>
+  </div>
+</div>

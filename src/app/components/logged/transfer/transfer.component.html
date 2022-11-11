@@ -1,0 +1,32 @@
+<div class="h-100">
+    <!-- Section Picker  -->
+    <ul class="luluh10 w-100 fw-bold nav nav-pills d-flex flex-row justify-content-center align-items-center"
+        id="lulusectionpicker-newmove" role="tablist">
+        <!-- Newmove btn -->
+        <li class="h-100 nav-item luluw50" role="presentation">
+            <button class="nav-link px-0 w-100 active" id="newmovecomponent-btn" data-bs-toggle="pill"
+                data-bs-target="#newmovecomponent-displayer" type="button" role="tab"
+                aria-controls="newmovecomponent-displayer" aria-selected="true">New move</button>
+        </li>
+        <!-- History btn -->
+        <li class="h-100 nav-item luluw50" role="presentation">
+            <button class="nav-link px-0 w-100" id="moveshistorycomponent-btn" data-bs-toggle="pill"
+                data-bs-target="#moveshistorycomponent-displayer" type="button" role="tab"
+                aria-controls="moveshistorycomponent-displayer" aria-selected="false">History</button>
+        </li>
+    </ul>
+
+    <!-- Section displayer -->
+    <div class="luluh90 tab-content pb-0" id="lulusectiondisplayer-newmove">
+        <!-- Newmove component -->
+        <div class="h-100 p-2 pb-1 tab-pane fade show active" id="newmovecomponent-displayer" role="tabpanel"
+            aria-labelledby="newmovecomponent-btn" tabindex="0">
+            <app-new-move></app-new-move>
+        </div>
+        <!-- History component -->
+        <div class="h-100 p-2 tab-pane fade" id="moveshistorycomponent-displayer" role="tabpanel"
+            aria-labelledby="moveshistorycomponent-btn" tabindex="0">
+            <app-moves-history></app-moves-history>
+        </div>
+    </div>
+</div>

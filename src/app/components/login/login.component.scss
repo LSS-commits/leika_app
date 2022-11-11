@@ -1,0 +1,28 @@
+
+///////////////////////////////////////////////
+
+/* TEST LEILA = 
+1) on page load = page is loaded and loader animation from main component plays on top of other components, meanwhile, login is fading in (2s)
+2) after click on logout = loader animation from main component plays on top of login component, meanwhile, login is fading in (2s)
+*/
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #luluwrapper-wholelogin {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-name: fadeIn;
+  }
+  
+  ///////////////////////////////////////////////

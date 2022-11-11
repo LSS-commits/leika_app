@@ -1,0 +1,16 @@
+<div class="py-1 d-flex flex-row justify-content-start align-items-center" id="luluaccountpicker">
+
+    <!-- TEST LEILA -->
+    <!-- TODO: HOW TO LINK THIS WITH TRANSACTIONS CARDS AND STATS, SHOULD BE CHILDREN OF THIS COMPONENT ??? -->
+    <div class="luluaccountpill mx-1" *ngFor="let acc of accounts">
+        <input type="radio" class="btn-check luluinput" name="account" autocomplete="off" checked>
+        <label class="luluaccountpilllabel btn d-flex flex-row align-items-center justify-content-center"
+            for="account2">
+            <!-- TODO: change this to account name after creating the beta accounts -->
+            <div class="mx-1 text-white">{{ acc.accountType }}</div>
+            <div class="mx-1" [ngClass]="(acc.balance > 0 ? 'lulugreentransaction' : 'text-danger')">{{ acc.balance | currency:'EUR' }}</div>
+        </label>
+    </div>
+<!-- END TEST LEILA -->
+
+</div>

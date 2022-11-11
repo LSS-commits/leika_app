@@ -1,0 +1,29 @@
+.luluincomingtransacard{
+    background-color: var(--lulugreen);
+    max-height: 200px;
+    border-bottom: 1px solid var(--lulucardborder);
+    
+    // border-radius: 50px;
+}
+
+.luluincomingtransacard-logo {
+    width: 14%;
+    max-width: 55px;
+}
+
+.luluincomingtransacard-text {
+    width: 85%;
+    font-size: 0.7rem;
+}
+
+.luluincomingtransacard-title {
+    font-size: 0.9rem;
+}
+
+.luluincomingtransacard-price {
+    font-size: 0.9rem;
+    min-width: fit-content;
+}
+.luluincomingtransacard-date{
+    color: var(--lulugreentxt);
+}

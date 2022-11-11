@@ -1,0 +1,52 @@
+<!-- TODOLULU Add an item somewhere that allows user to see all rejected transactions (in case he made one disappear that he wanted to keep and is looking for it, make it intuitive
+    can't display em in the special transaction, would be a mess with two scrollers) -->
+
+<div class="luluh91 py-2 px-4 d-flex flex-column align-items-stretch justify-content-evenly">
+
+    <!-- My account -->
+    <button class="btn bg-dark text-white" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#account-canvas" aria-controls="account-canvas">My account</button>
+    <!-- body -->
+    <div class="h-100 offcanvas offcanvas-end" tabindex="-1" id="account-canvas"
+        aria-labelledby="account-canvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="account-canvasLabel">Account settings</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            insert account component
+        </div>
+    </div>
+
+    <!-- Preferences -->
+    <button class="btn bg-dark text-white" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#preferences-canvas" aria-controls="preferences-canvas">Preferences</button>
+    <!-- body -->
+    <div class="h-100 offcanvas offcanvas-end" tabindex="-1" id="preferences-canvas"
+        aria-labelledby="preferences-canvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="preferences-canvasLabel">Preferences</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            insert preferences component
+        </div>
+    </div>
+
+    <!-- Documents -->
+    <button class="btn bg-dark text-white" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#documents-canvas" aria-controls="documents-canvas">Documents</button>
+    <!-- body -->
+    <div class="h-100 offcanvas offcanvas-end" tabindex="-1" id="documents-canvas"
+        aria-labelledby="documents-canvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="documents-canvasLabel">Documents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- insert documents component -->
+            <app-documents></app-documents>
+        </div>
+    </div>
+
+</div>

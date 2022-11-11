@@ -1,0 +1,37 @@
+<!-- onclick pass transaction id to transaction details component-->
+<a *ngFor="let transaction of sortedPendingTransactions"
+    class="lulupendingtransacard p-1 mt-1 d-flex flex-row justify-content-evenly align-items-center"
+    data-bs-toggle="offcanvas" data-bs-target="#leikode-canvas" aria-controls="leikode-canvas">
+    <img class="lulupendingtransacard-logo p-2 rounded" src="../../../../../../assets/categories/Pending.ico" alt="ico">
+    <div class="lulupendingtransacard-text px-2 d-flex flex-column justify-content-center align-items-start">
+        <small class="fst-italic">
+            {{ formatDate(transaction.submissionDate) }}
+        </small>
+        <div class="lulupendingtransacard-title">
+            {{ (transaction.title.length>25) ? (transaction.title|slice:0:25)+'..' : (transaction.title) }}
+        </div>
+        <div class="w-100 d-flex flex-row">
+            <div class="fw-bolder lulupendingtransacard-alert">
+                Click to validate
+            </div>
+            <div class="lulupendingtransacard-price luluw40 ms-auto d-flex flex-row align-items-start justify-content-evenly"
+                [ngClass]="{'lulugreentransaction' : !transaction.isAmountNegative}">
+                <div class="d-flex flex-row mx-1">
+                    {{ transaction.amount | currency: 'EUR'}}
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+
+<!-- Leikode offcanvas body -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="leikode-canvas" aria-labelledby="leikode-canvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="leikode-canvasLabel">Leikode validation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <app-leikode-validation></app-leikode-validation>
+    </div>
+</div>

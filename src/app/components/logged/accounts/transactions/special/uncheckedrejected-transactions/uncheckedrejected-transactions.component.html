@@ -1,0 +1,36 @@
+<a *ngFor="let transaction of sortedRejectedTransactions"
+    class="lulurejectedtransacard border rounded p-1 mt-1 d-flex flex-row justify-content-evenly align-items-center"
+    data-bs-toggle="offcanvas" data-bs-target="#transaction-details-canvas" aria-controls="transaction-details-canvas">
+    <img class="lulurejectedtransacard-logo p-2" src="../../../../../../assets/categories/Rejected-unchecked.ico"
+        alt="ico">
+    <div class="lulurejectedtransacard-text px-2 d-flex flex-column justify-content-center align-items-start">
+        <div class="lulurejectedtransacard-title">
+            {{ (transaction.title.length>25) ? (transaction.title|slice:0:25)+'..' : (transaction.title) }}
+        </div>
+        <div class="w-100 d-flex flex-row">
+            <div class="me-2">
+                {{formatDate(transaction.submissionDate)|slice:0:-5}}
+            </div>
+
+            <div class="lulurejectedtransacard-date-cardnb d-flex flex-row">
+                <div *ngIf="transaction.transactionType=='Card'">{{'Card **** '+(transaction.transactionRef|slice:-4)}}
+                </div>
+                <div *ngIf="transaction.transactionType=='Direct Debit'">{{"SEPA"+transaction.transactionRef|slice:0:-17}}
+                </div>
+                <div *ngIf="transaction.transactionType=='Wire Transfer'">{{"To:"+transaction.transactionRef|slice:0:-17}}
+                </div>
+            </div>
+        </div>
+        <div class="w-100 d-flex flex-row">
+            <div class="fw-bolder">
+                {{'Reason: ' + (transaction.rejectionReason | slice:0:30)}}
+            </div>
+            <div
+                class="lulurejectedtransacard-price luluw40 ms-auto d-flex flex-row align-items-start justify-content-evenly">
+                <div class="d-flex flex-row mx-1">
+                    {{ transaction.amount | currency: 'EUR'}}
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

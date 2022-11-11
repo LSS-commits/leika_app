@@ -1,0 +1,27 @@
+.lulurejectedtransacard{
+    background-color: var(--lulured);
+    max-height: 200px;
+    border-bottom: 1px solid var(--lulucardborder);
+    color: var(--luluredtxt);
+    
+    // border-radius: 50px;
+}
+
+.lulurejectedtransacard-logo {
+    width: 14%;
+    max-width: 55px;
+}
+
+.lulurejectedtransacard-text {
+    width: 85%;
+    font-size: 0.7rem;
+}
+
+.lulurejectedtransacard-title {
+    font-size: 0.9rem;
+}
+
+.lulurejectedtransacard-price {
+    font-size: 0.9rem;
+    min-width: fit-content;
+}

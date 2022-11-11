@@ -1,0 +1,51 @@
+/* ANIMATION UNTIL PAGE IS FULLY LOADED (PLAYS ON LOGIN PAGE + AFTER CLICK ON LOGIN, WHEN PAGE IS RELOADED TO GET THE DATA)
+*/
+.loaderContainer {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    background: var(--lulugradientgoldblack);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 999;
+}
+
+.loader {
+    border: 8px solid var(--luluclear);
+    border-radius: 50%;
+    border-top: 8px solid var(--lulugold);
+    width: 100px;
+    height: 100px;
+
+    margin: auto;
+
+
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { 
+      -webkit-transform: rotate(0deg); 
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+    }
+  }
+  
+  @keyframes spin {
+    0% { 
+      transform: rotate(0deg); 
+    }
+    100% { 
+      transform: rotate(360deg); 
+    }
+  }

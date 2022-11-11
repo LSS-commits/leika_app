@@ -1,0 +1,204 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html, body { height: 100%; }
+body { 
+    margin: 0; font-family: 'Rubik', "Helvetica Neue", sans-serif;
+
+ }
+
+ textarea{
+    resize: none;
+ }
+// ******************STYLES REFS*******************************************************************
+
+// TODOLULU global transacard classe(s)
+
+:root{
+    --luluultrablack: #1a1e21;
+    --luluvampireblack: #080808;
+    --lulubg: #212529;
+    --lulubg2: #393d42;
+    // --lulugradientblack: linear-gradient(315deg, #130f40 0%, #000000 74%);;
+    --lulugradientgoldblack: linear-gradient(360deg, #4d3904 0%, #000000 44%);;
+    --luluclear: #fbfdff;
+    --lulugrey: #C3C0C0ff;
+    --lulugold: rgb(224, 182, 66);
+    --luludarkgold: #4d3904;
+
+    --lulucardborder: #dddada;
+
+    --lulublack: #141414ff;
+    --lulublack2: #242424ff;
+    
+    --lulugrey1a: #f7f7f7fb; 
+    --lulugrey1b: #f1efef;
+    --lulugrey3: #C3C0C0ff;
+    --lulugrey4: #727272;
+    --lulugrey5: #212529;
+    --lulugold1: #DDC172ff;
+    --lulugold2: #D2B86Dff;
+    
+    --lulubtngrey: #C3C0C0ff;
+    --lulubtnred: rgb(212, 30, 30);
+
+    --lulucardtextgrey: #727272;
+    --lulucardusernote: #707070;
+    // --lulucardusernote: #969696;
+    // --lulucardusernote: rgb(224, 182, 66);
+    --lulucardusernoteborder: #ececec; //f7f3f3
+    --lulucardtextgreen: #0dd02a;
+    --lulucardtextred: #d00d0d;
+    
+    --lulured: rgba(248, 182, 182); //(248, 182, 182, 0.593)
+    --luluyellow: rgb(249, 255, 170); //(249, 255, 170)
+    --lulugreen: rgb(199, 248, 187); //(199, 248, 187)
+    
+    --luluredtxt: rgb(170, 2, 2); //(248, 182, 182)
+    --lulugreentxt: rgb(2, 170, 131); //(248, 182, 182)
+
+    --lulublue: #4d4deeaa;
+}
+
+
+////////// TEST SCROLLBAR LEILA
+ body {
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color:  var(--lulugold1) var(--luluvampireblack);   /* scroll thumb and track */ 
+ }
+ body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--luluvampireblack);      /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--luluvampireblack);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--lulugold1);  /* creates padding around scroll thumb */
+  }
+  
+////////// END TEST SCROLLBAR LEILA
+
+.lulugrey{
+    background-color: var(--lulugrey);
+}
+.lulubg{
+    background-color: var(--lulubg);
+}
+.luluclear{
+    background-color: var(--luluclear);
+}
+.luluultrablack{
+    background-color: var(--luluultrablack);
+}
+.luluvampireblack{
+    background-color: var(--luluvampireblack);
+}
+.lulugradientgoldblack{
+    background: var(--lulugradientgoldblack);
+}
+.lulugreytxt{
+    color: var(--lulugrey) !important;
+}
+.lulubgtxt{
+    color: var(--lulubg) !important;
+}
+.luluultrablacktxt{
+    color: var(--luluultrablack);
+}
+.lulugoldtxt{
+    color: var(--lulugold);
+}
+.lulusignaturetxt{
+    color: var(--lulugrey4);
+}
+.lulugoldbtn{
+    color: var(--lulugold) !important;
+}
+.lulugoldbg{
+    background-color: var(--lulugold);
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+// GLOBAL CLASSES
+.luluh91{
+    height: 91%;
+}
+.luluh90{
+    height: 90%;
+}
+.luluh82{
+    height: 82%;
+}
+.luluh75{
+    height: 75%;
+}
+.luluh60{
+    height: 60%;
+}
+.luluh65{
+    height: 65%;
+}
+.luluh50{
+    height: 50%;
+}
+.luluh10{
+    height: 10%;
+}
+.luluh9{
+    height: 9%;
+}
+.luluw91{
+    width: 91%;
+}
+.luluw50{
+    width: 50%;
+}
+.luluw40{
+    width: 40%;
+}
+.luluw33{
+    width: 33%;
+}
+.luluw30{
+    width: 30%;
+}
+.luluw9{
+    width: 9%;
+}
+
+.lulugreentransaction{
+    color: var(--lulucardtextgreen);
+}
+.lulurejectedtransaction{
+    // color: var(--lulucardtextred);
+    text-decoration: line-through;
+}
+
+.luluscrollx{
+    overflow-x: scroll;
+}
+.luluscrolly{
+    overflow-y: scroll;
+}
+
+
+
+
+.tg{
+    background-color: #000000;
+    background-image: linear-gradient(280deg, #000000 0%, #434343 99%);
+}
+
+// Test btn
+.btn-dark, .bg-dark{
+    background-color: var(--luluvampireblack) !important;
+}

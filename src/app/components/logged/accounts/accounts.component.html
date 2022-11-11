@@ -1,0 +1,51 @@
+<!-- TODOLULU only appears if there's more than one account)-->
+<!-- PASS ACCOUNT DATA FROM ACCOUNT PICKER HERE TO GET DATA FROM EACH ACCOUNT -->
+<app-accountpicker></app-accountpicker>
+
+<!-- TODOLULU ngClass If there's more than one account, then class h-100, else luluh91 -->
+<div class="luluh91">
+
+    <!-- Section Picker  -->
+    <ul class="luluh10 py-1 mx-3 nav nav-pills d-flex flex-row justify-content-between align-items-center"
+        id="lulusectionpicker" role="tablist">
+        <!-- Transactions btn -->
+        <li class="nav-item luluw30" role="presentation">
+            <button class="nav-link px-0 w-100 active" id="transactionscomponent-btn" data-bs-toggle="pill"
+                data-bs-target="#transactionscomponent-displayer" type="button" role="tab"
+                aria-controls="transactionscomponent-displayer" aria-selected="true">Transactions</button>
+        </li>
+        <!-- Cards btn -->
+        <li class="nav-item luluw30" role="presentation">
+            <button class="nav-link px-0 w-100" id="cardscomponent-btn" data-bs-toggle="pill"
+                data-bs-target="#cardscomponent-displayer" type="button" role="tab"
+                aria-controls="cardscomponent-displayer" aria-selected="false">Cards</button>
+        </li>
+        <!-- Statistics btn -->
+        <li class="nav-item luluw30" role="presentation">
+            <button class="nav-link px-0 w-100" id="statscomponent-btn" data-bs-toggle="pill"
+                data-bs-target="#statscomponent-displayer" type="button" role="tab"
+                aria-controls="statscomponent-displayer" aria-selected="false">Statistics</button>
+        </li>
+    </ul>
+
+    <!-- Section displayer -->
+    <div class="luluh90 tab-content pb-0" id="lulusectiondisplayer">
+        <!-- Transaction component -->
+        <div class="h-100 p-2 pb-1 tab-pane fade show active" id="transactionscomponent-displayer" role="tabpanel"
+            aria-labelledby="transactionscomponent-btn" tabindex="0">
+            <app-transactions></app-transactions>
+        </div>
+
+        <!-- Cards Gestioncomponent -->
+        <div class="h-100 p-2 tab-pane fade" id="cardscomponent-displayer" role="tabpanel"
+            aria-labelledby="cardscomponent-btn" tabindex="0">
+            <app-cards></app-cards>
+        </div>
+
+        <!-- Stats component -->
+        <div class="h-100 p-2 tab-pane fade" id="statscomponent-displayer" role="tabpanel"
+            aria-labelledby="statscomponent-btn" tabindex="0">
+            <app-stats></app-stats>
+        </div>
+    </div>
+</div>

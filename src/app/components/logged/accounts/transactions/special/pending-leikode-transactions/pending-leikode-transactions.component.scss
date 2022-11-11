@@ -1,0 +1,40 @@
+#leikode-canvas{
+    height: 70vh;
+}
+.badge{
+    max-width: fit-content;
+}
+
+// TODOLULU wish this was not blue but gold, but the logo would have to be too, and don't know how to do that efficiently yet
+.lulupendingtransacard{
+    // background-color: var(--luluyellow);
+    background-color: var(--luluvampireblack);
+    border: 3px solid var(--lulublue);
+    // color: var(--lulugold);
+    color: rgb(225, 223, 223);
+    border-radius: 50px;
+    max-height: 200px;
+}
+
+.lulupendingtransacard-logo {
+    width: 24%;
+    max-width: 55px;
+}
+
+.lulupendingtransacard-text {
+    width: 75%;
+    font-size: 0.7rem;
+}
+
+.lulupendingtransacard-title {
+    font-size: 0.9rem;
+}
+
+.lulupendingtransacard-price {
+    font-size: 0.9rem;
+    min-width: fit-content;
+}
+.lulupendingtransacard-alert{
+    color: var(--lulubluetxt);
+    font-size: 0.9rem;
+}
