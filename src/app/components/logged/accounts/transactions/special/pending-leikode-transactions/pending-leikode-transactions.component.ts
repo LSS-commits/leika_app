@@ -97,7 +97,7 @@ export class PendingLeikodeTransactionsComponent implements OnInit {
             }
           },
           error: (err) => {
-            console.log(err);
+            // console.log(err);
           }
         });
   

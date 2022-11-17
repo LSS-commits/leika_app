@@ -67,7 +67,7 @@ export class IncomingTransactionsComponent implements OnInit {
           }
         },
         error: (err) => {
-          console.log(err);
+          // console.log(err);
         }
       });
 

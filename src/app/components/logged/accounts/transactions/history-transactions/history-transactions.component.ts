@@ -65,7 +65,7 @@ export class HistoryTransactionsComponent implements OnInit {
           }
         },
         error: (err) => {
-          console.log(err);
+          // console.log(err);
         }
       });
 

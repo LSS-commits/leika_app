@@ -38,7 +38,7 @@ export class AccountpickerComponent implements OnInit {
           // console.log(this.accounts);
         },
         error: (err) => {
-          console.log(err);
+          // console.log(err);
         }
       });
 
