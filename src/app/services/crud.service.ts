@@ -7,10 +7,10 @@ import { map} from 'rxjs';
 })
 export class CrudService {
 
-  // baseUrl = 'http://localhost:3000/api';
+  baseUrl = 'http://localhost:3000/api';
 
-  // backend route prefix (add /users or /auth in components) 
-  baseUrl = 'https://leikaback.herokuapp.com/api';
+  // backend route prefix (add /users for ex, or /auth in components) 
+  // baseUrl = 'https://leikaback.herokuapp.com/api';
 
 
   constructor(private http: HttpClient) { }
