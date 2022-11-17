@@ -6,95 +6,95 @@
     height="auto">
 
   <h6 class="text-center mb-3">Bank Id Statement</h6>
-<div class="table-responsive">
-  <table class="table">
-    <thead class="luluvampireblack text-white">
-      <tr>
-        <th scope="col">Branch Code</th>
-        <th scope="col">Counter Code</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divider">
-      <tr>
-        <td>{{accountData.branchCode}}</td>
-        <td>{{accountData.counterCode}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="luluvampireblack text-white">
+        <tr>
+          <th scope="col">Branch Code</th>
+          <th scope="col">Counter Code</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>{{accountData.branchCode}}</td>
+          <td>{{accountData.counterCode}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<div class="table-responsive">
-  <table class="table">
-    <thead class="luluvampireblack text-white">
-      <tr>
-        <th scope="col">Account Number</th>
-        <th scope="col">BIS Key</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divider">
-      <tr>
-        <td>{{accountData.accountNumber}}</td>
-        <td>{{accountData.keyBIS}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="luluvampireblack text-white">
+        <tr>
+          <th scope="col">Account Number</th>
+          <th scope="col">BIS Key</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>{{accountData.accountNumber}}</td>
+          <td>{{accountData.keyBIS}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<div class="table-responsive">
-  <table class="table">
-    <thead class="luluvampireblack text-white">
-      <tr>
-        <th scope="col">Currency</th>
-        <th scope="col">Domiciliation</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divider">
-      <tr>
-        <td>&euro;</td>
-        <td>{{accountData.domiciliation}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="luluvampireblack text-white">
+        <tr>
+          <th scope="col">Currency</th>
+          <th scope="col">Domiciliation</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>&euro;</td>
+          <td>{{accountData.domiciliation}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<div class="table-responsive">
-  <table class="table table-striped">
-    <thead class="">
-      <tr>
-        <th scope="col">IBAN</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divider">
-      <tr>
-        <td>{{accountData.accountIBAN}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<div class="table-responsive">
-  <table class="table table-striped">
-    <thead class="">
-      <tr>
-        <th scope="col">BIC</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divider">
-      <tr>
-        <td>{{accountData.accountBIC}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead class="">
+        <tr>
+          <th scope="col">IBAN</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>{{accountData.accountIBAN}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead class="">
+        <tr>
+          <th scope="col">BIC</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>{{accountData.accountBIC}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <p class="m-0">Account Holder: {{accountData.userName}}</p>
   <address class="d-flex flex-column">
     <span class="fst-italic" *ngFor="let f of accountData.address">
       {{f}}
     </span>
-   
+
   </address>
 
-  <button class="btn luluvampireblack bg-dark text-white mt-5" (click)="generatePDF()">Generate PDF</button>
 </div>
+<button class="btn luluvampireblack bg-dark text-white mt-5" (click)="generatePDF()">Generate PDF</button>
 
 <!-- END TEST EDIT BANK ID STATEMENT -->
