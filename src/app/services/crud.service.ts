@@ -8,10 +8,9 @@ import { map} from 'rxjs';
 export class CrudService {
 
   // backend route prefix (add /users for ex, or /auth in components) 
-  baseUrl = 'http://localhost:3000/api';
+  // baseUrl = 'http://localhost:3000/api';
 
-  // baseUrl = 'https://leikaback.herokuapp.com/api';
-  // baseUrl = 'https://leika-api.onrender.com/api';
+  baseUrl = 'https://leika-api.onrender.com/api';
 
 
   constructor(private http: HttpClient) { }
