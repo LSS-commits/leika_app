@@ -1,6 +1,8 @@
 # Leika Bank App
 This is the front-end code of a simple, fluid and intuitive banking application built with Angular.
 
+![Preview app](https://github.com/LSS-commits/leika_app/blob/main/screen_leika_front.PNG?raw=true)
+
 # Overview
 - Transaction history displayed in a clear, readable and uncluttered way
 - Transactions displayed according to their status:
